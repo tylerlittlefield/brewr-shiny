@@ -7,14 +7,15 @@ A shiny app for the `brewr` package.
 
 ![Demo](inst/images/demo.png)
 
-## Demo
+## Running the app
 
-To try it out, you’ll need to:
+You can view the app [here](https://tylurp.shinyapps.io/brewr-shiny/) or
+run it locally. To run it locally, make sure you have the correct
+libraries installed (see `app.R`) and then run:
 
-1.  Install RStudio if you haven’t already
-2.  Install this repository (clone/download button -\> download zip)
-3.  Install the “Source Code Pro” font in the fonts folder
-4.  Install the libraries shown in `app.R`
+``` r
+shiny::runGitHub("brewr-shiny", "tylurp") 
+```
 
-Then run the app by either selecting all the code and running or hitting
-the “Run App” button in RStudio.
+Alternatively, you can download this repo, open the project, open
+`app.R` and then hit “Run App” in the RStudio IDE.

@@ -5,6 +5,7 @@ library(forcats)  # reordering factors
 library(jsonlite) # easy json to dataframe
 library(brewr)    # homebrew json api wrapper
 library(readr)    # convert datatypes easily
+library(curl)
 
 # Define the UI
 ui <- fluidPage(
@@ -69,7 +70,7 @@ server <- function(input, output) {
             theme(text = element_text(family = "SourceCodePro-Regular"), # Lazy/not reproducible
                   panel.grid.minor.x = element_blank(),
                   panel.grid.major.y = element_blank())
-    }, height = 800)
+    }, height = 700)
 }
 
 # Run the application 
